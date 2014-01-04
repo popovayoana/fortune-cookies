@@ -1,2 +1,2 @@
 You can use these files simply by invoking "fortune filename" inside the directory.
-To store them with your other fortune cookies, you should use the bootstrap script.
+To store them with your other fortune cookies, you should use the makefile.
