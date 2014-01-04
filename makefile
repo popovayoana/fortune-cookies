@@ -4,5 +4,6 @@ all: ${POSSIBLE}
 
 %.dat : %
 	@strfile $< $@ 
-	@cp $@ "${MYPATH}" 
-	@echo "Copied $@ to ${MYPATH}"
+	@cp $@ "${MYPATH}"
+	@cp $(shell basename $@ .dat) "${MYPATH}" 
+	@echo "Copied $@ and $(shell basename $@ .dat) to ${MYPATH}"
